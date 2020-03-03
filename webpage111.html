@@ -1,0 +1,307 @@
+<!DOCTYPe html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The best</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="blueberry.css"/>
+<style type="text/css">
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body {
+    background: #f0f0f0;
+    font: 14px/20px Ariel, san serif;
+    color: #555;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 180%;
+    line-height: 120%;
+    padding: 5% 0;
+}
+h2 {
+    text-decoration: underline;
+    line-height: 280%;
+    padding-left: 2%;
+}
+h3 {
+    line-height: 110%;
+    padding: 5% 0;
+}
+p {
+    padding: 1%;
+} 
+img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underlined;
+}
+header {
+    background: #405580;
+    width:100%;
+    height: 86px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: .90;
+}
+#logo {
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 60px;
+    background: url(easy.jpg) no-repeat center;
+}
+nav {
+    float: right;
+    padding: 35px 20px 20px 0;
+}
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(icon.png) center;
+}
+a:hover#meun-icon {
+    border-radius: 4px 4px 0 0;
+}
+ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+.current {
+    color: #fff;
+    text-decoration: underline;
+}
+#doc {
+    margin: 40px 0;
+}
+#content {
+    margin: 0 auto;
+    max-width: 1140px;
+    margin-top: 110px;
+}
+.blueberry {
+    max-width: 960px;
+    margin-top: 110px; 
+}
+section {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+article {
+    float: left;
+    margin: 0 auto;
+    width: 35%;
+    height: auto;
+    padding: 4%;
+}
+ul.gym {
+    padding-left: 3%;
+}
+footer {
+    background: #333333;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.90;
+}
+footer p, footer h3 {
+    color: #fff;
+}
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+ul.social li {
+    display: inline;
+}
+ul.social li img {
+    height: 50px;
+}
+footer.second {
+    border-top: 1px solid #404E50;
+    background-color: #333333;
+    min-height: 50px;
+    text-align: center;
+    opacity: 0.95;
+}
+/*---------------MEDIA!!--------------*/
+@media screen and (max-width: 478px) {
+    body {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 740px) {
+    header {
+        position: absolute;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #405580;
+        border: 1px solid #fff;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 2px 0 2px 2px;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    section {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    article {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script>
+$(window).load(function() {
+    $(".blueberry").blueberry();
+});
+</script>
+
+</head>
+<body>
+     <header>
+         <a href="easy.jpg" id="logo"></a>
+         <nav>
+             <a href="icon.png" id="menu-icon"></a>
+             <ul>
+                 <li><a href="#" class="current">Home</a></li>
+                 <li><a href="#">Hotels</a></li>
+                 <li><a href="#">Flights</a></li>
+                 <li><a href="#">Currencies</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="#">About</a></li>
+             </ul>
+         </nav>
+     </header>
+     <div id="doc">
+         <div id="content">
+             <div class="blueberry">
+                 <ul class="slides">
+                     <li><img src="hotel 1.png" /></li>
+                     <li><img src="flight 1.png" /></li>
+                     <li><img src="currency 1.png" /></li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+     <section>
+        <li><img src="outlined1.jpg" /></li>
+        <h1>Hotels</h1>
+        <p>We are the best and a secured platform where you can get curreny change at chaper rates.</p>
+     </section>
+     <section>
+        <li><img src="outlined2.jpg" /></li>
+        <h1>Currency</h1>
+        <p>We are the best and a secured platform where you can get curreny change at chaper rates.</p>
+     </section>
+     <section>
+        <li><img src="outlined3.jpg" /></li>
+        <h1>Currency</h1>
+        <p>We are the best and a secured platform where you can get curreny change at chaper rates.</p>
+     </section>
+     <div class="clear"></div>
+     <article>
+        <img src="bedroom 1.jpg" />
+     </article>
+     <aside>
+         <h2>Our Hotels</h2>
+         <ul class="gym">
+        <p>ohbfhiysgfuhagify gfoahskdvfiyhadsd dsyfiadb ihbafuydfsa yuhbkdc ayuhbkdv yubhdasiycd uhdkva yuhbkddva yibfdhbkugifadyi vahdbvo8yfbvuid od8ayfdhvbay8vbkahudvbo8ay fvg8dh vb8aefyv g8dyhvba8ydvyhbdsvy8ao8yyvbdavbyo8yvdvybay</p>
+         </ul>
+        </aside>
+     <div class="clear"></div>
+     <section>
+         <h1>Hotel Rooms</h1>
+         <img src="bath 1.jpg" />
+         <p>hgcyhft ujgfu ty yukfvg8syife y88igfaiyg fgo8fga ogy lerf </p>
+     </section>
+     <section>
+        <h1>Hotel Rooms</h1>
+        <img src="fly 1.jpg" />
+        <p>hgcyhft ujgfu ty yukfvg8syife y88igfaiyg fgo8fga ogy lerf </p>
+    </section>
+    <section>
+         <h1>Hotel Rooms</h1>
+        <img src="euro 1.jpg" />
+        <p>hgcyhft ujgfu ty yukfvg8syife y88igfaiyg fgo8fga ogy lerf </p>
+    </section>
+    <footer>
+         <section>
+             <h3><b>Our Services</b></h3>
+             <p><b>09030917945</b>
+             <p>hig8yfegsibdfy <br>
+                lvagzsbdvyla dv8sl<br>
+                ib olabv ybvfa yg a</p>
+         </section>
+         <section>
+             <h3>Connect With Us</h3>
+             <ul class="social">
+                 <li><a href="#"><img src="face 1.jpg"> </a></li>
+                 <li><a href="#"><img src="google 1.png"> </a></li>
+                 <li><a href="#"><img src="whatsapp 1.png"> </a></li>
+             </ul>
+         </section>
+         <section>
+             <img src="logo.jpg" />
+         </section>
+    </footer>
+    <footer class="second">
+        <p>@copyright - The best, 2020</p>
+    </footer>
+</body>
+</html>
